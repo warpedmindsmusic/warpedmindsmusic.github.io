@@ -46,53 +46,16 @@
     </nav>
     </header>
     <h1 class="heading"> WM <span>Contact Us</span></h1>
-<!--    <a style="text-align: center" class="btn btn-first" href="mailto:warpedband2014@gmail.com">Email Us Directly!</a>     -->
-
-<!--
-    <div class="container-contact">
-      <form action="mailto:conor.byrne2@esb.ie" method="post" enctype="text/plain">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-        <input type="submit" value="Submit">
-      </form>
-    </div>
--->        
     <div class="container-contact" >
         <div class="row">
             <div class="col-lg-12 m-auto">
                 <div class="card mt-5">
-                    <div class="card-title">
-                        <?php 
-                            $Msg = "";
-                            if(isset($_GET['error']))
-                            {
-                                $Msg = " Please Fill in the Blanks ";
-                                echo '<div class="alert alert-danger">'.$Msg.'</div>';
-                            }
- 
-                            if(isset($_GET['success']))
-                            {
-                                $Msg = " Your Message Has Been Sent ";
-                                echo '<div class="alert alert-success">'.$Msg.'</div>';
-                            }
-                        
-                        ?>
-                    </div>
                     <div class="card-body">
-                        <form action="process.php" method="post">
-                            <input type="email" name="Email" placeholder="Your Email" class="form-control mb-2">
-                            <input type="text" name="Subject" placeholder="Subject" class="form-control mb-2">
-                            <textarea name="msg" class="form-control mb-2" placeholder="Write The Message"></textarea>
-                            <button class="btn btn-success" name="btn-send"> Send </button>
-                        </form>
+                        <input id="emailFormInput" type="email" name="Email" placeholder="Your Email" class="form-control mb-2">
+                        <input id="subjectFormInput" type="text" name="Subject" placeholder="Subject" class="form-control mb-2">
+                        <textarea id="msgFormInput" name="msg" class="form-control mb-2" placeholder="Write The Message"></textarea>
+                        <button class="btn btn-success" name="btn-send" id="btn-send"> Send </button>
+                        <div id="emailErrorText" style="display: none"> Empty message/subject </div>
                     </div>
                 </div>
             </div>
@@ -119,7 +82,23 @@
     </div>
      
 
-   
+    <script>
+        var emailBody = document.getElementById( "msgFormInput" );
+        var emailSub = document.getElementById( "subjectFormInput" );
+        var emailCC = document.getElementById( "emailFormInput" );
+        var emailTo = "warpedband2014@gmail.com";
+        document.getElementById("btn-send").onclick = function () {
+            if( emailBody.value.length == 0 || emailSub.value.length == 0 ){
+                // Do something here
+                document.getElementById( "emailErrorText" ).style.display = "block"
+
+            }
+            else{
+                window.open("mailto:"+emailTo+'?cc='+emailCC.value+'&subject='+emailSub.value+'&body='+emailBody.value, '_blank');
+                document.getElementById( "emailErrorText" ).style.display = "none"
+            }
+        };
+    </script>
   
 </body> 
 </html>
