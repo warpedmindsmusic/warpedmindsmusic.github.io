@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body p {
+    font-family: 'Lato', sans-serif;
+}
+a, h1, h2, h3, h4, h5, h6, span, .container-contact {
+ font-family: 'Montserrat', sans-serif;
+ font-weight: 300;
+}
+.wm-title{
+    margin-top: -38px;
+    margin-left: 98px;
+}
+@media only screen and (max-width: 360px) {
+  .wm-title {
+    margin-top: -31px;
+    font-size: 17px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .headline {
+    margin-top: 125px !important;
+  }
+}
+h2,h3 span { 
+    width:440px;
+    background-color: #430baf; 
+}
+.headline{
+    margin-top: 150px;
+}
+.navbar-style
+{
+    box-shadow: 0 5px 10px #efefef;
+}
+.nav{
+    text-align: center;
+}
+.nav .active {
+  border-bottom: 3px solid #303030;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav .active {
+    border-bottom: 3px solid #303030;
+      position: relative;
+        display: inline-block;
+  }
+}
+.logo
+{
+    height: 48px; 
+    padding-left: 15px;
+}
+.icon-bar
+{
+    background: #303030;
+}
+
+li a
+{
+    color: #333;
+}
+
+a.btn
+{
+    margin: 10px 0px;
+    width: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+a.btn-first
+{
+    background-color: #1db954;
+    color: white;
+}
+a.btn-second
+{
+    background: transparent;
+    border: 1px solid #303030;
+}
+a.btn:hover
+{
+    background: #303030;
+    border: none;
+    color: white;
+    box-shadow: 5px 5px 10px #999;
+    transition: 0.3s;
+}
+.banner-info, banner-image
+{
+    margin:30px 0;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+   
+    background-color: white; 
+    color: #303030;
+    text-align: center;
+}
+  .border {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+  }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 75px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+.fa:hover {
+    opacity: 1;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+.fa-spotify {
+  background: #1db954;
+  color: white;
+}
+
+.gigs{
+    text-align: center;
+}
+.tour-row {
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+.tour-row:last-child {
+    border: none;
+}
+
+.tour-item {
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.tour-date {
+    color: #555;
+    width: 32.5%;
+    font-weight: bold;
+}
+
+.tour-city {
+    width: 32.5%;
+}
+
+.tour-arena {
+    width: 32.5%;
+}
+
+.tour-btn {
+    max-width: 19%;
+}
+.jumbotron {
+  color: white;
+  background-image: url("../images/cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh !important;
+}
+hr {
+  border:none;
+  height: 20px;
+  width: 95%;
+height: 50px;
+margin-top: 0;
+border-bottom: 1px solid #1f1209;
+box-shadow: 0 15px 15px -15px #333;
+  margin: -50px auto 10px; 
+}
+
+@media only screen and (max-width: 600px) {
+  h2 {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-home {
+  }
+}
+@media only screen and (max-width: 600px) {
+  .spotify {
+    text-align:center;
+  }
+ }
+/*
+@media only screen and (min-width: 600px) {
+    .listen{
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+}
+*/
+@media only screen and (max-width: 600px) {
+  .jumbotron {
+    background-image: url("../images/EP.jpg");
+  }
+}
+@media only screen and (max-width: 600px) {
+    .container-contact{
+        padding: 15px;
+    }
+}
+.container-gall {
+max-width: 100rem;
+margin: 0 auto;
+padding: 0 2rem 2rem;
+}
+
+.heading {
+font-family: "Montserrat", Arial, sans-serif;
+font-size: 4rem;
+font-weight: 500;
+line-height: 1.5;
+text-align: center;
+padding: 3.5rem 0;
+color: #1a1a1a;
+}
+
+.heading span {
+display: block;
+}
+.gallery {
+display: flex;
+flex-wrap: wrap;
+/* Compensate for excess margin on outer gallery flex items */
+margin: -1rem -1rem;
+}
+.gallery-item {
+/* Minimum width of 24rem and grow to fit available space */
+flex: 1 0 24rem;
+/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
+margin: 1rem;
+box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+overflow: hidden;
+}
+.gallery-image {
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 400ms ease-out;
+}
+.gallery-image:hover {
+transform: scale(1.15);
+}
+/*
+
+The following rule will only run if your browser supports CSS grid.
+
+Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling. 
+
+*/
+@supports (display: grid) {
+.gallery {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+grid-gap: 2rem;
+}
+.gallery,
+.gallery-item {
+margin: 0;
+}
+}
+/**/
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container-contact {
+  border-radius: 5px;
+  padding: 0px 95px 0px 95px;
+}

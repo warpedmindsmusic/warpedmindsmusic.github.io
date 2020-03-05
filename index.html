@@ -1,1 +1,142 @@
-Conor sucks
+<!doctype html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, intial-scale=1">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<!--FONT-->
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:300" rel="stylesheet">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+<script src="js/script.js"></script>
+<link href="css/style.css" rel="stylesheet"  type="text/css">
+<title> WM </title>
+
+</head>
+
+<body>
+
+    <header class="header">
+    <nav class="navbar navbar-style">
+        <div class ="container">
+            <div class="navbar-header"> 
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><img class="logo" src="images/WM.png"></a>
+                <h3 class="wm-title">WARPED MINDS</h3>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="micon">
+                <ul class="nav navbar-nav navbar-right">
+<!--                    <li class="active"><a href="index.html"><strong>Home</strong></a></li>-->
+                    <li class="two"><a href="gigs.html">Gigs</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>  
+            </div>
+        </div>
+    </nav>
+    </header>      
+    <div style="display: none;">
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <br>
+        <div class="headline"> 
+            <!--h2><span>New EP - Stories We'll Never Tell</span></h2-->
+            <h3><span>New EP Available Now!</span></h3>
+            <a class="btn btn-first" href="https://www.spotify.com/">Listen on Spotify</a>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+        <p>Debut EP from Wapred Minds was recorded in tsumani studios mixed and engineered by Adam Wilson.</p>
+    </div>
+    <div class="container spotify">
+        <div class="row">
+            <div class="col-sm-6">
+                <iframe src="https://embed.spotify.com/follow/1/?uri=spotify:artist:4ikPJGH7I7IyhdBJs1GMhh&size=detail&theme=light" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
+            </div>
+            <div class="col-sm-6" style="margin-bottom:15px;">
+                <iframe src="https://open.spotify.com/embed/track/4Dg5moVCTqxAb7Wr8Dq2T5" width="300" height="380" frameborder="0" data-mce-fragment="1"></iframe>
+            </div>
+        </div>
+    </div>
+        
+    <iframe width="auto" height="auto"
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+    </iframe>
+
+
+    <br> 
+    </div>
+    
+    
+    
+        <p style="text-align: center; font-size: 22px; margin:200px 0px 200px 0px;" id="demo"></p>
+
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 5, 2020 12:00:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+
+          // Get today's date and time
+          var now = new Date().getTime();
+
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "EXPIRED";
+          }
+        }, 1000);
+        </script>
+
+    
+    
+    
+    <div class="footer">
+        <br>
+        <hr>
+        <ul>    
+            <br>
+            <li><p><strong>Follow Us!</strong></p> </li>
+            <br>
+            <li><a href="https://www.facebook.com/warpedmindsmusic/" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com/warpedmindsmusic/" class="fa fa-instagram"></a>
+            <a href="https://www.spotify.com/" class="fa fa-spotify"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+            <a href="https://www.soundcloud.com/warpedmindsmusic/" class="fa fa-soundcloud"></a></li>
+        </ul>
+        <br>
+        <p>Warped Minds 2020 &#x00AE;</p>   
+    </div>
+        
+        
+
+    
+    
+</body>
+
+</html>
